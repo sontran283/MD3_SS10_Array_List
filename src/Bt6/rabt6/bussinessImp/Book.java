@@ -160,4 +160,5 @@ public class Book implements IBook {
     public void setBookStatus(boolean bookStatus) {
         this.bookStatus = bookStatus;
     }
+
 }
