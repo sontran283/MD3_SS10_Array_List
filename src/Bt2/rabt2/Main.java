@@ -15,15 +15,17 @@ public class Main {
             System.out.print(in + " ");
         }
 
+        // ko dung reverse
         System.out.println();
-        System.out.println("danh sach dao nguoc khong dung reverse: ");
+        System.out.println("danh sach dao nguoc khong dung reverse la: ");
         for (int i = list.size() - 1; i >= 0; i--) {
             System.out.print(list.get(i) + " ");
         }
 
-        Collections.reverse(list);
+        // dung reverse
         System.out.println();
-        System.out.println("danh sach dao nguoc dung reverse: ");
+        Collections.reverse(list);
+        System.out.println("danh sach dao nguoc dung reverse la: ");
         for (Integer in : list) {
             System.out.print(in + " ");
         }

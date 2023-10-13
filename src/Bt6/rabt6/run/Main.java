@@ -1,6 +1,7 @@
 package Bt6.rabt6.run;
 
 import Bt6.rabt6.bussinessImp.Book;
+import Bt6.rabt6.config.config;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -21,9 +22,9 @@ public class Main {
             System.out.println("Chon 5_ Nhập tên sách từ bàn phím, thực hiện tìm và in ra sách có tên phù hợp");
             System.out.println("Chon 6_ Nhập vào mã sách, thay đổi trạng thái sách (false -true)");
             System.out.println("Chon 7_ Thoát khỏi chương trình");
-            System.out.println("*** Moi nhap lua chon cua ban ***");
+            System.out.println("*** Mời nhập lựa chọn của bạn ***");
             try {
-                int choice = Integer.parseInt(scanner.nextLine());
+                int choice = config.getValidateInteface();
                 handleMenu(choice);
             } catch (Exception e) {
                 System.err.println("___ sai dinh dang, moi nhap lai ___");
